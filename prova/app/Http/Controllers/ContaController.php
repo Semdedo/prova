@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\conta;
 
 class ContaController extends Controller
 {
@@ -20,6 +21,11 @@ class ContaController extends Controller
     public function store(Request $request)
     {
         //
+    }
+
+    public function index()
+    {
+        return conta::all();
     }
 
     /**
