@@ -17,6 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("conta",function(){
-    return \App\conta::all();
-});
+Route::get('conta', 'ContaController@index');

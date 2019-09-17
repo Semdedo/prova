@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use app\conta;
+use \app\conta;
 
 class conta_table_seeder extends Seeder
 {

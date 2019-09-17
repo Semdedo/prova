@@ -30,7 +30,7 @@ class ContaController extends Controller
      */
     public function show($id)
     {
-        return view();
+        return conta::find($id);
     }
 
     /**
