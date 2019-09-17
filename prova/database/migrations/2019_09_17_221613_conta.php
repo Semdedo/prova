@@ -17,7 +17,7 @@ class Conta extends Migration
             $table->bigIncrements('id');
             $table->string('nome',50);
             $table->string('cpf',50);
-            $table->timestamps('data');
+            $table->date('data');
             $table->integer('conta');
             $table->integer('saldo');
             $table->timestamps();
