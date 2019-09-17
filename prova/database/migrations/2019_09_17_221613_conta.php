@@ -15,11 +15,11 @@ class Conta extends Migration
     {
         Schema::create('conta', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nome');
-            $table->string('cpf');
+            $table->string('nome',50);
+            $table->string('cpf',50);
             $table->timestamps('data');
             $table->integer('conta');
-            $table->doubleval('saldo');
+            $table->integer('saldo');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class Conta extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('conta');
     }
 }

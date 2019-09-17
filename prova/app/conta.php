@@ -8,4 +8,4 @@ class conta extends Model
 {
     protected $fillable = ['nome','cfp','data','conta','saldo'];
 }
-}
+

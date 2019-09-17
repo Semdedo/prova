@@ -16,11 +16,11 @@ class conta_table_seeder extends Seeder
 
         for($i=0; $i <50; $i++){
             \App\Article::create([
-                'nome'=>$faker->name,
-                'cfp'=>$faker->sentence,
+                'nome'=>$faker->firstNameMale,
+                'cfp'=>$faker->word,
                 'data'=>$faker->timestamp,
-                'conta'=>$faker->integer,
-                'saldo'=>$faker->doubleval,
+                'conta'=>$faker->randomDigit,
+                'saldo'=>$faker->randomDigit,
             ]);
         }
     }
