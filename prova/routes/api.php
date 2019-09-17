@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('contas', 'ContaController@index');
 Route::get('contas', 'ContaController@show');
+Route::get('contas', 'ContaController@store');
+Route::get('contas', 'ContaController@destroy');
