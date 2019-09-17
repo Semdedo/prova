@@ -15,9 +15,9 @@ class conta_table_seeder extends Seeder
         $faker = \Faker\Factory::create();
 
         for($i=0; $i <50; $i++){
-            \App\Article::create([
-                'nome'=>$faker->firstNameMale,
-                'cfp'=>$faker->word,
+            \App\conta::create([
+                'nome'=>$faker->firstNwordameMale,
+                'cpf'=>$faker->word,
                 'data'=>$faker->timestamp,
                 'conta'=>$faker->randomDigit,
                 'saldo'=>$faker->randomDigit,
